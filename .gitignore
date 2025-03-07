@@ -1,13 +1,19 @@
-# Données sensibles ou temporaires des containers Docker
+# Exclusion totale des fichiers système ou Docker
 data/
-logs/
-node_modules/
-dist/
-build/
-tmp/
+swapfile
 *.log
 *.tmp
 *.bak
 *.pem
 *.key
 *.env
+*.token
+node_modules/
+dist/
+build/
+tmp/
+logs/
+acme.json
+*.swp
+*.swo
+
