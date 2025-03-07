@@ -26,6 +26,7 @@ echo "🔐 Récupération des secrets..."
 VAULT_RESPONSE=$(curl -s -H "X-Vault-Token: $VAULT_TOKEN" -X GET "$VAULT_ADDR/v1/secret/data/dev/application" | jq .data.data)
 
 export SPRING_DATASOURCE_USERNAME=$(echo "$VAULT_RESPONSE" | jq -r '.["spring.datasource.username"] // "default-db-user"')
+export SPRING_DATASOURCE_URL=$(echo "$VAULT_RESPONSE" | jq -r '.["spring.datasource.url"] // "default-db-user"')
 export SPRING_DATASOURCE_PASSWORD=$(echo "$VAULT_RESPONSE" | jq -r '.["spring.datasource.password"] // "default-db-password"')
 export SPRING_SECURITY_USER_NAME=$(echo "$VAULT_RESPONSE" | jq -r '.["spring.security.user.name"] // "admin"')
 export SPRING_SECURITY_USER_PASSWORD=$(echo "$VAULT_RESPONSE" | jq -r '.["spring.security.user.password"] // "admin123"')

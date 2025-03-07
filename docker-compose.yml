@@ -71,19 +71,27 @@ services:
     environment:
       VAULT_DEV_ROOT_TOKEN_ID: root  # 🔥 À remplacer en production
       VAULT_ADDR: "http://0.0.0.0:8200"
+      VAULT_API_ADDR: "http://0.0.0.0:8200"
     cap_add:
       - IPC_LOCK
-    command: "server -dev"  # ⚠️ Dev mode (pas sécurisé en production)
     ports:
       - "8200:8200"
+    volumes:
+      - ./data/vault:/vault/data
+      - ./data/vault/config/vault-config.json:/vault/config/vault-config.json
+      - ./data/vault/entrypoint.sh:/vault/entrypoint.sh
+    entrypoint: ["/vault/entrypoint.sh"]
     networks:
       - web
+    command: ["vault", "server", "-config=/vault/config/vault-config.json"]
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.vault.entrypoints=websecure"
       - "traefik.http.routers.vault.rule=Host(`vault.the-tip-top.site`)"
       - "traefik.http.routers.vault.tls.certresolver=lets-encr"
       - "traefik.http.services.vault.loadbalancer.server.port=8200"
+      - "traefik.http.routers.vault.service=vault"
+
 #---------------------
 # gogs-db
 #---------------------      
