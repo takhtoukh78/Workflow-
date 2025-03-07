@@ -201,6 +201,7 @@ services:
     volumes:
       - ./data/prometheus:/prometheus  # Montage du répertoire pour les données et la config
       - ./data/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml  # Montage du fichier de config spécifique
+      - ./data/alertmanager/alerts.rules.yml:/etc/prometheus/alerts.rules.yml
     command: "--config.file=/etc/prometheus/prometheus.yml --storage.tsdb.path=/prometheus"
     ports:
      - 9090
@@ -322,7 +323,7 @@ services:
       - ALERTMANAGER_CONFIG=/etc/alertmanager/config.yml
     volumes:
       - ./data/alertmanager/config.yml:/etc/alertmanager/config.yml
-      - ./data/alertmanager/data:/data
+      - ./data/alertmanager/data:/alertmanager
     labels:
       - traefik.enable=true
       - "traefik.http.routers.alertmanager.entrypoints=websecure"
