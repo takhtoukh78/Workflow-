@@ -1,0 +1,1731 @@
+-bash: 0: command not found
+open repository
+lock repository
+using parent snapshot 606e1672
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 3.266s: 118730 files, 6.390 GiB
+
+Files:          33 new,    48 changed, 118649 unmodified
+Dirs:           11 new,    44 changed, 17423 unmodified
+Data Blobs:    111 new
+Tree Blobs:     53 new
+Added to the repository: 58.431 MiB (11.339 MiB stored)
+
+processed 118730 files, 6.390 GiB in 0:12
+snapshot 05a7cbfb saved
+using temporary cache in /tmp/restic-check-cache-184818749
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:01] 100.00%  2 / 2 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 2 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  daily snapshot    /
+                                                                    weekly snapshot
+05a7cbfb  2025-02-10 02:00:01  vps-79b520bc  vps-backup-2025-02-10  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+2 snapshots
+
+open repository
+lock repository
+using parent snapshot 05a7cbfb
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 9.433s: 118765 files, 6.482 GiB
+
+Files:         480 new,  1358 changed, 116927 unmodified
+Dirs:          152 new,   987 changed, 16406 unmodified
+Data Blobs:   1289 new
+Tree Blobs:   1084 new
+Added to the repository: 190.962 MiB (52.168 MiB stored)
+
+processed 118765 files, 6.482 GiB in 0:15
+snapshot 2a45a008 saved
+using temporary cache in /tmp/restic-check-cache-1365390891
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:02] 100.00%  3 / 3 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 3 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  daily snapshot    /
+                                                                    weekly snapshot
+05a7cbfb  2025-02-10 02:00:01  vps-79b520bc  vps-backup-2025-02-10  daily snapshot    /
+2a45a008  2025-02-11 02:00:01  vps-79b520bc  vps-backup-2025-02-11  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+3 snapshots
+
+open repository
+lock repository
+using parent snapshot 2a45a008
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 10.118s: 127453 files, 7.506 GiB
+
+Files:        8794 new,  1453 changed, 117206 unmodified
+Dirs:         1037 new,  1279 changed, 16233 unmodified
+Data Blobs:   8799 new
+Tree Blobs:   1938 new
+Added to the repository: 768.979 MiB (337.440 MiB stored)
+
+processed 127453 files, 7.506 GiB in 0:23
+snapshot 0bec4543 saved
+using temporary cache in /tmp/restic-check-cache-1396295327
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:02] 100.00%  4 / 4 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 4 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  daily snapshot    /
+                                                                    weekly snapshot
+05a7cbfb  2025-02-10 02:00:01  vps-79b520bc  vps-backup-2025-02-10  daily snapshot    /
+2a45a008  2025-02-11 02:00:01  vps-79b520bc  vps-backup-2025-02-11  daily snapshot    /
+0bec4543  2025-02-12 02:00:02  vps-79b520bc  vps-backup-2025-02-12  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+4 snapshots
+
+open repository
+lock repository
+using parent snapshot 0bec4543
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 9.692s: 127507 files, 7.702 GiB
+
+Files:         128 new,  1247 changed, 126132 unmodified
+Dirs:           31 new,   871 changed, 17649 unmodified
+Data Blobs:    683 new
+Tree Blobs:    868 new
+Added to the repository: 238.521 MiB (86.416 MiB stored)
+
+processed 127507 files, 7.702 GiB in 0:15
+snapshot 3b767e2d saved
+using temporary cache in /tmp/restic-check-cache-3089842731
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:02] 100.00%  5 / 5 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 5 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  daily snapshot    /
+                                                                    weekly snapshot
+05a7cbfb  2025-02-10 02:00:01  vps-79b520bc  vps-backup-2025-02-10  daily snapshot    /
+2a45a008  2025-02-11 02:00:01  vps-79b520bc  vps-backup-2025-02-11  daily snapshot    /
+0bec4543  2025-02-12 02:00:02  vps-79b520bc  vps-backup-2025-02-12  daily snapshot    /
+3b767e2d  2025-02-13 02:00:01  vps-79b520bc  vps-backup-2025-02-13  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+5 snapshots
+
+open repository
+lock repository
+using parent snapshot 3b767e2d
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 10.407s: 129111 files, 9.327 GiB
+
+Files:        1747 new,  1642 changed, 125722 unmodified
+Dirs:          399 new,  1700 changed, 16820 unmodified
+Data Blobs:   2162 new
+Tree Blobs:   2027 new
+Added to the repository: 959.502 MiB (721.532 MiB stored)
+
+processed 129111 files, 9.328 GiB in 0:30
+snapshot fd8fc49c saved
+using temporary cache in /tmp/restic-check-cache-2599936686
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:03] 100.00%  6 / 6 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 6 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  daily snapshot    /
+                                                                    weekly snapshot
+05a7cbfb  2025-02-10 02:00:01  vps-79b520bc  vps-backup-2025-02-10  daily snapshot    /
+2a45a008  2025-02-11 02:00:01  vps-79b520bc  vps-backup-2025-02-11  daily snapshot    /
+0bec4543  2025-02-12 02:00:02  vps-79b520bc  vps-backup-2025-02-12  daily snapshot    /
+3b767e2d  2025-02-13 02:00:01  vps-79b520bc  vps-backup-2025-02-13  daily snapshot    /
+fd8fc49c  2025-02-14 02:00:02  vps-79b520bc  vps-backup-2025-02-14  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+6 snapshots
+
+open repository
+lock repository
+using parent snapshot fd8fc49c
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 12.577s: 130389 files, 11.662 GiB
+
+Files:        1414 new,  1642 changed, 127333 unmodified
+Dirs:          378 new,  1467 changed, 17419 unmodified
+Data Blobs:   3446 new
+Tree Blobs:   1791 new
+Added to the repository: 1.737 GiB (788.146 MiB stored)
+
+processed 130389 files, 11.662 GiB in 0:42
+snapshot a065e713 saved
+using temporary cache in /tmp/restic-check-cache-4214251809
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:04] 100.00%  7 / 7 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 7 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  daily snapshot    /
+                                                                    weekly snapshot
+05a7cbfb  2025-02-10 02:00:01  vps-79b520bc  vps-backup-2025-02-10  daily snapshot    /
+2a45a008  2025-02-11 02:00:01  vps-79b520bc  vps-backup-2025-02-11  daily snapshot    /
+0bec4543  2025-02-12 02:00:02  vps-79b520bc  vps-backup-2025-02-12  daily snapshot    /
+3b767e2d  2025-02-13 02:00:01  vps-79b520bc  vps-backup-2025-02-13  daily snapshot    /
+fd8fc49c  2025-02-14 02:00:02  vps-79b520bc  vps-backup-2025-02-14  daily snapshot    /
+a065e713  2025-02-15 02:00:01  vps-79b520bc  vps-backup-2025-02-15  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+7 snapshots
+
+open repository
+lock repository
+using parent snapshot a065e713
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 11.165s: 130399 files, 11.814 GiB
+
+Files:          48 new,   191 changed, 130160 unmodified
+Dirs:           16 new,   115 changed, 19140 unmodified
+Data Blobs:    360 new
+Tree Blobs:    111 new
+Added to the repository: 317.560 MiB (118.682 MiB stored)
+
+processed 130399 files, 11.814 GiB in 0:20
+snapshot b5a6360a saved
+using temporary cache in /tmp/restic-check-cache-989646488
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:03] 100.00%  8 / 8 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 8 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  weekly snapshot   /
+05a7cbfb  2025-02-10 02:00:01  vps-79b520bc  vps-backup-2025-02-10  daily snapshot    /
+2a45a008  2025-02-11 02:00:01  vps-79b520bc  vps-backup-2025-02-11  daily snapshot    /
+0bec4543  2025-02-12 02:00:02  vps-79b520bc  vps-backup-2025-02-12  daily snapshot    /
+3b767e2d  2025-02-13 02:00:01  vps-79b520bc  vps-backup-2025-02-13  daily snapshot    /
+fd8fc49c  2025-02-14 02:00:02  vps-79b520bc  vps-backup-2025-02-14  daily snapshot    /
+a065e713  2025-02-15 02:00:01  vps-79b520bc  vps-backup-2025-02-15  daily snapshot    /
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+8 snapshots
+
+open repository
+lock repository
+using parent snapshot b5a6360a
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 4.031s: 130405 files, 11.921 GiB
+
+Files:          38 new,   155 changed, 130212 unmodified
+Dirs:           13 new,    68 changed, 19190 unmodified
+Data Blobs:    324 new
+Tree Blobs:     76 new
+Added to the repository: 285.661 MiB (111.742 MiB stored)
+
+processed 130405 files, 11.921 GiB in 0:15
+snapshot 6ca3af89 saved
+using temporary cache in /tmp/restic-check-cache-2367522154
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:03] 100.00%  9 / 9 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 8 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  weekly snapshot   /
+2a45a008  2025-02-11 02:00:01  vps-79b520bc  vps-backup-2025-02-11  daily snapshot    /
+0bec4543  2025-02-12 02:00:02  vps-79b520bc  vps-backup-2025-02-12  daily snapshot    /
+3b767e2d  2025-02-13 02:00:01  vps-79b520bc  vps-backup-2025-02-13  daily snapshot    /
+fd8fc49c  2025-02-14 02:00:02  vps-79b520bc  vps-backup-2025-02-14  daily snapshot    /
+a065e713  2025-02-15 02:00:01  vps-79b520bc  vps-backup-2025-02-15  daily snapshot    /
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  daily snapshot    /
+                                                                    weekly snapshot
+6ca3af89  2025-02-17 02:00:01  vps-79b520bc  vps-backup-2025-02-17  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+8 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+05a7cbfb  2025-02-10 02:00:01  vps-79b520bc  vps-backup-2025-02-10  /
+-------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 8 snapshots
+[0:02] 100.00%  8 / 8 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  268 / 268 packs processed
+
+
+to repack:            53 blobs / 176.905 KiB
+this removes:         50 blobs / 172.104 KiB
+to delete:             0 blobs / 0 B
+total prune:          50 blobs / 172.104 KiB
+remaining:        111906 blobs / 4.068 GiB
+unused size after prune: 30.306 MiB (0.73% of remaining size)
+
+repacking packs
+[0:00] 100.00%  1 / 1 packs repacked
+
+rebuilding index
+[0:02] 100.00%  268 / 268 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  9 / 9 files deleted
+
+removing 1 old packs
+[0:00] 100.00%  1 / 1 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot 6ca3af89
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 9.423s: 130446 files, 12.178 GiB
+
+Files:         114 new,  1350 changed, 128982 unmodified
+Dirs:           31 new,   893 changed, 18346 unmodified
+Data Blobs:    922 new
+Tree Blobs:    898 new
+Added to the repository: 451.024 MiB (177.874 MiB stored)
+
+processed 130446 files, 12.178 GiB in 0:26
+snapshot 1ee6f77d saved
+using temporary cache in /tmp/restic-check-cache-2787690435
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:05] 100.00%  9 / 9 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 8 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  weekly snapshot   /
+0bec4543  2025-02-12 02:00:02  vps-79b520bc  vps-backup-2025-02-12  daily snapshot    /
+3b767e2d  2025-02-13 02:00:01  vps-79b520bc  vps-backup-2025-02-13  daily snapshot    /
+fd8fc49c  2025-02-14 02:00:02  vps-79b520bc  vps-backup-2025-02-14  daily snapshot    /
+a065e713  2025-02-15 02:00:01  vps-79b520bc  vps-backup-2025-02-15  daily snapshot    /
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  daily snapshot    /
+                                                                    weekly snapshot
+6ca3af89  2025-02-17 02:00:01  vps-79b520bc  vps-backup-2025-02-17  daily snapshot    /
+1ee6f77d  2025-02-18 02:00:01  vps-79b520bc  vps-backup-2025-02-18  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+8 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+2a45a008  2025-02-11 02:00:01  vps-79b520bc  vps-backup-2025-02-11  /
+-------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 8 snapshots
+[0:03] 100.00%  8 / 8 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  280 / 280 packs processed
+
+
+to repack:          1087 blobs / 798.087 KiB
+this removes:        929 blobs / 660.228 KiB
+to delete:             0 blobs / 0 B
+total prune:         929 blobs / 660.228 KiB
+remaining:        112797 blobs / 4.241 GiB
+unused size after prune: 51.303 MiB (1.18% of remaining size)
+
+repacking packs
+[0:00] 100.00%  2 / 2 packs repacked
+
+rebuilding index
+[0:01] 100.00%  279 / 279 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  2 / 2 files deleted
+
+removing 2 old packs
+[0:00] 100.00%  2 / 2 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot 1ee6f77d
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 14.766s: 130438 files, 12.549 GiB
+
+Files:          34 new,   161 changed, 130243 unmodified
+Dirs:           11 new,   101 changed, 19160 unmodified
+Data Blobs:    554 new
+Tree Blobs:     88 new
+Added to the repository: 526.481 MiB (184.064 MiB stored)
+
+processed 130438 files, 12.549 GiB in 0:24
+snapshot 2433f348 saved
+using temporary cache in /tmp/restic-check-cache-317751453
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:06] 100.00%  9 / 9 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 8 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  weekly snapshot   /
+3b767e2d  2025-02-13 02:00:01  vps-79b520bc  vps-backup-2025-02-13  daily snapshot    /
+fd8fc49c  2025-02-14 02:00:02  vps-79b520bc  vps-backup-2025-02-14  daily snapshot    /
+a065e713  2025-02-15 02:00:01  vps-79b520bc  vps-backup-2025-02-15  daily snapshot    /
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  daily snapshot    /
+                                                                    weekly snapshot
+6ca3af89  2025-02-17 02:00:01  vps-79b520bc  vps-backup-2025-02-17  daily snapshot    /
+1ee6f77d  2025-02-18 02:00:01  vps-79b520bc  vps-backup-2025-02-18  daily snapshot    /
+2433f348  2025-02-19 02:00:01  vps-79b520bc  vps-backup-2025-02-19  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+8 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+0bec4543  2025-02-12 02:00:02  vps-79b520bc  vps-backup-2025-02-12  /
+-------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 8 snapshots
+[0:03] 100.00%  8 / 8 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  291 / 291 packs processed
+
+
+to repack:          2096 blobs / 2.293 MiB
+this removes:        862 blobs / 554.653 KiB
+to delete:             0 blobs / 0 B
+total prune:         862 blobs / 554.653 KiB
+remaining:        112577 blobs / 4.420 GiB
+unused size after prune: 66.762 MiB (1.47% of remaining size)
+
+repacking packs
+[0:03] 100.00%  2 / 2 packs repacked
+
+rebuilding index
+[0:02] 100.00%  290 / 290 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  2 / 2 files deleted
+
+removing 2 old packs
+[0:00] 100.00%  2 / 2 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot 2433f348
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 17.528s: 131555 files, 14.139 GiB
+
+Files:        1259 new,  1706 changed, 128597 unmodified
+Dirs:           88 new,  1320 changed, 17922 unmodified
+Data Blobs:   1743 new
+Tree Blobs:   1369 new
+Added to the repository: 1.373 GiB (1.029 GiB stored)
+
+processed 131562 files, 14.139 GiB in 0:37
+snapshot 8214aff0 saved
+using temporary cache in /tmp/restic-check-cache-3391336190
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:03] 100.00%  9 / 9 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 8 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  weekly snapshot   /
+fd8fc49c  2025-02-14 02:00:02  vps-79b520bc  vps-backup-2025-02-14  daily snapshot    /
+a065e713  2025-02-15 02:00:01  vps-79b520bc  vps-backup-2025-02-15  daily snapshot    /
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  daily snapshot    /
+                                                                    weekly snapshot
+6ca3af89  2025-02-17 02:00:01  vps-79b520bc  vps-backup-2025-02-17  daily snapshot    /
+1ee6f77d  2025-02-18 02:00:01  vps-79b520bc  vps-backup-2025-02-18  daily snapshot    /
+2433f348  2025-02-19 02:00:01  vps-79b520bc  vps-backup-2025-02-19  daily snapshot    /
+8214aff0  2025-02-20 02:00:02  vps-79b520bc  vps-backup-2025-02-20  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+8 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+3b767e2d  2025-02-13 02:00:01  vps-79b520bc  vps-backup-2025-02-13  /
+-------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 8 snapshots
+[0:02] 100.00%  8 / 8 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  354 / 354 packs processed
+
+
+to repack:          2102 blobs / 2.305 MiB
+this removes:       1010 blobs / 714.733 KiB
+to delete:            46 blobs / 34.551 MiB
+total prune:        1056 blobs / 35.249 MiB
+remaining:        114633 blobs / 5.415 GiB
+unused size after prune: 106.032 MiB (1.91% of remaining size)
+
+repacking packs
+[0:01] 100.00%  2 / 2 packs repacked
+
+rebuilding index
+[0:01] 100.00%  351 / 351 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  2 / 2 files deleted
+
+removing 4 old packs
+[0:00] 100.00%  4 / 4 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot 8214aff0
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 18.521s: 161073 files, 19.999 GiB
+
+Files:       30193 new,  2775 changed, 128105 unmodified
+Dirs:         2292 new,  2494 changed, 16804 unmodified
+Data Blobs:  14741 new
+Tree Blobs:   4747 new
+Added to the repository: 3.978 GiB (3.368 GiB stored)
+
+processed 161073 files, 19.999 GiB in 1:35
+snapshot 73141404 saved
+using temporary cache in /tmp/restic-check-cache-3714968078
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:03] 100.00%  9 / 9 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 8 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  weekly snapshot   /
+a065e713  2025-02-15 02:00:01  vps-79b520bc  vps-backup-2025-02-15  daily snapshot    /
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  daily snapshot    /
+                                                                    weekly snapshot
+6ca3af89  2025-02-17 02:00:01  vps-79b520bc  vps-backup-2025-02-17  daily snapshot    /
+1ee6f77d  2025-02-18 02:00:01  vps-79b520bc  vps-backup-2025-02-18  daily snapshot    /
+2433f348  2025-02-19 02:00:01  vps-79b520bc  vps-backup-2025-02-19  daily snapshot    /
+8214aff0  2025-02-20 02:00:02  vps-79b520bc  vps-backup-2025-02-20  daily snapshot    /
+73141404  2025-02-21 02:00:01  vps-79b520bc  vps-backup-2025-02-21  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+8 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+fd8fc49c  2025-02-14 02:00:02  vps-79b520bc  vps-backup-2025-02-14  /
+-------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 8 snapshots
+[0:03] 100.00%  8 / 8 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  555 / 555 packs processed
+
+
+to repack:          3119 blobs / 2.915 MiB
+this removes:       1215 blobs / 848.590 KiB
+to delete:            21 blobs / 16.515 MiB
+total prune:        1236 blobs / 17.344 MiB
+remaining:        132885 blobs / 8.766 GiB
+unused size after prune: 160.891 MiB (1.79% of remaining size)
+
+repacking packs
+[0:01] 100.00%  2 / 2 packs repacked
+
+rebuilding index
+[0:01] 100.00%  553 / 553 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  2 / 2 files deleted
+
+removing 3 old packs
+[0:00] 100.00%  3 / 3 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot 73141404
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 8.750s: 147427 files, 15.748 GiB
+
+Files:         117 new,   157 changed, 147153 unmodified
+Dirs:           12 new,   351 changed, 21230 unmodified
+Data Blobs:    308 new
+Tree Blobs:    173 new
+Added to the repository: 264.104 MiB (110.831 MiB stored)
+
+processed 147427 files, 15.748 GiB in 0:18
+snapshot ba046e64 saved
+using temporary cache in /tmp/restic-check-cache-3834498224
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:04] 100.00%  9 / 9 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 8 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  weekly snapshot   /
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  daily snapshot    /
+                                                                    weekly snapshot
+6ca3af89  2025-02-17 02:00:01  vps-79b520bc  vps-backup-2025-02-17  daily snapshot    /
+1ee6f77d  2025-02-18 02:00:01  vps-79b520bc  vps-backup-2025-02-18  daily snapshot    /
+2433f348  2025-02-19 02:00:01  vps-79b520bc  vps-backup-2025-02-19  daily snapshot    /
+8214aff0  2025-02-20 02:00:02  vps-79b520bc  vps-backup-2025-02-20  daily snapshot    /
+73141404  2025-02-21 02:00:01  vps-79b520bc  vps-backup-2025-02-21  daily snapshot    /
+ba046e64  2025-02-22 02:00:02  vps-79b520bc  vps-backup-2025-02-22  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+8 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+a065e713  2025-02-15 02:00:01  vps-79b520bc  vps-backup-2025-02-15  /
+-------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 8 snapshots
+[0:03] 100.00%  8 / 8 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  561 / 561 packs processed
+
+
+to repack:          3695 blobs / 3.308 MiB
+this removes:        117 blobs / 343.017 KiB
+to delete:             0 blobs / 0 B
+total prune:         117 blobs / 343.017 KiB
+remaining:        133249 blobs / 8.874 GiB
+unused size after prune: 206.003 MiB (2.27% of remaining size)
+
+repacking packs
+[0:01] 100.00%  2 / 2 packs repacked
+
+rebuilding index
+[0:01] 100.00%  560 / 560 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  2 / 2 files deleted
+
+removing 2 old packs
+[0:00] 100.00%  2 / 2 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot ba046e64
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 5.094s: 147350 files, 15.861 GiB
+
+Files:          39 new,   165 changed, 147146 unmodified
+Dirs:           13 new,   156 changed, 21424 unmodified
+Data Blobs:    388 new
+Tree Blobs:     91 new
+Added to the repository: 336.424 MiB (132.098 MiB stored)
+
+processed 147350 files, 15.861 GiB in 0:21
+snapshot f569f6de saved
+using temporary cache in /tmp/restic-check-cache-155496800
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:05] 100.00%  9 / 9 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 9 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  weekly snapshot   /
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  weekly snapshot   /
+6ca3af89  2025-02-17 02:00:01  vps-79b520bc  vps-backup-2025-02-17  daily snapshot    /
+1ee6f77d  2025-02-18 02:00:01  vps-79b520bc  vps-backup-2025-02-18  daily snapshot    /
+2433f348  2025-02-19 02:00:01  vps-79b520bc  vps-backup-2025-02-19  daily snapshot    /
+8214aff0  2025-02-20 02:00:02  vps-79b520bc  vps-backup-2025-02-20  daily snapshot    /
+73141404  2025-02-21 02:00:01  vps-79b520bc  vps-backup-2025-02-21  daily snapshot    /
+ba046e64  2025-02-22 02:00:02  vps-79b520bc  vps-backup-2025-02-22  daily snapshot    /
+f569f6de  2025-02-23 02:00:01  vps-79b520bc  vps-backup-2025-02-23  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+9 snapshots
+
+open repository
+lock repository
+using parent snapshot f569f6de
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 4.754s: 147393 files, 15.951 GiB
+
+Files:          77 new,   168 changed, 147148 unmodified
+Dirs:           11 new,   118 changed, 21462 unmodified
+Data Blobs:    392 new
+Tree Blobs:    125 new
+Added to the repository: 375.765 MiB (151.163 MiB stored)
+
+processed 147393 files, 15.951 GiB in 0:18
+snapshot 1f64b8f8 saved
+using temporary cache in /tmp/restic-check-cache-2354273347
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:04] 100.00%  10 / 10 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 9 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  weekly snapshot   /
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  weekly snapshot   /
+1ee6f77d  2025-02-18 02:00:01  vps-79b520bc  vps-backup-2025-02-18  daily snapshot    /
+2433f348  2025-02-19 02:00:01  vps-79b520bc  vps-backup-2025-02-19  daily snapshot    /
+8214aff0  2025-02-20 02:00:02  vps-79b520bc  vps-backup-2025-02-20  daily snapshot    /
+73141404  2025-02-21 02:00:01  vps-79b520bc  vps-backup-2025-02-21  daily snapshot    /
+ba046e64  2025-02-22 02:00:02  vps-79b520bc  vps-backup-2025-02-22  daily snapshot    /
+f569f6de  2025-02-23 02:00:01  vps-79b520bc  vps-backup-2025-02-23  daily snapshot    /
+                                                                    weekly snapshot
+1f64b8f8  2025-02-24 02:00:01  vps-79b520bc  vps-backup-2025-02-24  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+9 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+6ca3af89  2025-02-17 02:00:01  vps-79b520bc  vps-backup-2025-02-17  /
+-------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 9 snapshots
+[0:03] 100.00%  9 / 9 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  580 / 580 packs processed
+
+
+to repack:            76 blobs / 302.851 KiB
+this removes:         73 blobs / 297.585 KiB
+to delete:            51 blobs / 32.660 MiB
+total prune:         124 blobs / 32.951 MiB
+remaining:        134121 blobs / 9.118 GiB
+unused size after prune: 238.400 MiB (2.55% of remaining size)
+
+repacking packs
+[0:00] 100.00%  1 / 1 packs repacked
+
+rebuilding index
+[0:01] 100.00%  578 / 578 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  3 / 3 files deleted
+
+removing 3 old packs
+[0:00] 100.00%  3 / 3 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot 1f64b8f8
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 11.184s: 134565 files, 16.846 GiB
+
+Files:        1657 new,   486 changed, 132422 unmodified
+Dirs:          316 new,  1015 changed, 18768 unmodified
+Data Blobs:   1386 new
+Tree Blobs:   1298 new
+Added to the repository: 678.829 MiB (520.495 MiB stored)
+
+processed 134565 files, 16.846 GiB in 0:31
+snapshot 0647bb3a saved
+using temporary cache in /tmp/restic-check-cache-897415131
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:04] 100.00%  10 / 10 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 9 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  weekly snapshot   /
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  weekly snapshot   /
+2433f348  2025-02-19 02:00:01  vps-79b520bc  vps-backup-2025-02-19  daily snapshot    /
+8214aff0  2025-02-20 02:00:02  vps-79b520bc  vps-backup-2025-02-20  daily snapshot    /
+73141404  2025-02-21 02:00:01  vps-79b520bc  vps-backup-2025-02-21  daily snapshot    /
+ba046e64  2025-02-22 02:00:02  vps-79b520bc  vps-backup-2025-02-22  daily snapshot    /
+f569f6de  2025-02-23 02:00:01  vps-79b520bc  vps-backup-2025-02-23  daily snapshot    /
+                                                                    weekly snapshot
+1f64b8f8  2025-02-24 02:00:01  vps-79b520bc  vps-backup-2025-02-24  daily snapshot    /
+0647bb3a  2025-02-25 02:00:01  vps-79b520bc  vps-backup-2025-02-25  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+9 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+1ee6f77d  2025-02-18 02:00:01  vps-79b520bc  vps-backup-2025-02-18  /
+-------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 9 snapshots
+[0:02] 100.00%  9 / 9 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  610 / 610 packs processed
+
+
+to repack:           898 blobs / 694.307 KiB
+this removes:        103 blobs / 319.783 KiB
+to delete:            22 blobs / 16.009 MiB
+total prune:         125 blobs / 16.321 MiB
+remaining:        136680 blobs / 9.610 GiB
+unused size after prune: 269.833 MiB (2.74% of remaining size)
+
+repacking packs
+[0:00] 100.00%  1 / 1 packs repacked
+
+rebuilding index
+[0:03] 100.00%  609 / 609 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  2 / 2 files deleted
+
+removing 2 old packs
+[0:00] 100.00%  2 / 2 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot 0647bb3a
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 9.437s: 134612 files, 16.991 GiB
+
+Files:         197 new,   223 changed, 134192 unmodified
+Dirs:           28 new,   340 changed, 19746 unmodified
+Data Blobs:    439 new
+Tree Blobs:    285 new
+Added to the repository: 317.107 MiB (145.979 MiB stored)
+
+processed 134612 files, 16.991 GiB in 0:21
+snapshot d19181d6 saved
+using temporary cache in /tmp/restic-check-cache-3690623164
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:04] 100.00%  10 / 10 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 9 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  weekly snapshot   /
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  weekly snapshot   /
+8214aff0  2025-02-20 02:00:02  vps-79b520bc  vps-backup-2025-02-20  daily snapshot    /
+73141404  2025-02-21 02:00:01  vps-79b520bc  vps-backup-2025-02-21  daily snapshot    /
+ba046e64  2025-02-22 02:00:02  vps-79b520bc  vps-backup-2025-02-22  daily snapshot    /
+f569f6de  2025-02-23 02:00:01  vps-79b520bc  vps-backup-2025-02-23  daily snapshot    /
+                                                                    weekly snapshot
+1f64b8f8  2025-02-24 02:00:01  vps-79b520bc  vps-backup-2025-02-24  daily snapshot    /
+0647bb3a  2025-02-25 02:00:01  vps-79b520bc  vps-backup-2025-02-25  daily snapshot    /
+d19181d6  2025-02-26 02:00:01  vps-79b520bc  vps-backup-2025-02-26  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+9 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+2433f348  2025-02-19 02:00:01  vps-79b520bc  vps-backup-2025-02-19  /
+-------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 9 snapshots
+[0:03] 100.00%  9 / 9 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  619 / 619 packs processed
+
+
+to repack:           886 blobs / 704.359 KiB
+this removes:        878 blobs / 657.817 KiB
+to delete:           113 blobs / 70.995 MiB
+total prune:         991 blobs / 71.637 MiB
+remaining:        136413 blobs / 9.683 GiB
+unused size after prune: 297.289 MiB (3.00% of remaining size)
+
+repacking packs
+[0:00] 100.00%  3 / 3 packs repacked
+
+rebuilding index
+[0:01] 100.00%  613 / 613 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  2 / 2 files deleted
+
+removing 7 old packs
+[0:00] 100.00%  7 / 7 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot d19181d6
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 9.523s: 134764 files, 17.083 GiB
+
+Files:         235 new,   229 changed, 134300 unmodified
+Dirs:           37 new,   310 changed, 19788 unmodified
+Data Blobs:    495 new
+Tree Blobs:    309 new
+Added to the repository: 357.374 MiB (166.719 MiB stored)
+
+processed 134764 files, 17.083 GiB in 0:19
+snapshot 733f86e0 saved
+using temporary cache in /tmp/restic-check-cache-3152481564
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:04] 100.00%  10 / 10 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 9 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  weekly snapshot   /
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  weekly snapshot   /
+73141404  2025-02-21 02:00:01  vps-79b520bc  vps-backup-2025-02-21  daily snapshot    /
+ba046e64  2025-02-22 02:00:02  vps-79b520bc  vps-backup-2025-02-22  daily snapshot    /
+f569f6de  2025-02-23 02:00:01  vps-79b520bc  vps-backup-2025-02-23  daily snapshot    /
+                                                                    weekly snapshot
+1f64b8f8  2025-02-24 02:00:01  vps-79b520bc  vps-backup-2025-02-24  daily snapshot    /
+0647bb3a  2025-02-25 02:00:01  vps-79b520bc  vps-backup-2025-02-25  daily snapshot    /
+d19181d6  2025-02-26 02:00:01  vps-79b520bc  vps-backup-2025-02-26  daily snapshot    /
+733f86e0  2025-02-27 02:00:01  vps-79b520bc  vps-backup-2025-02-27  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+9 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+8214aff0  2025-02-20 02:00:02  vps-79b520bc  vps-backup-2025-02-20  /
+-------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 9 snapshots
+[0:02] 100.00%  9 / 9 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  624 / 624 packs processed
+
+
+to repack:          2658 blobs / 4.903 MiB
+this removes:       1272 blobs / 1.158 MiB
+to delete:           157 blobs / 98.528 MiB
+total prune:        1429 blobs / 99.686 MiB
+remaining:        135788 blobs / 9.748 GiB
+unused size after prune: 306.407 MiB (3.07% of remaining size)
+
+repacking packs
+[0:02] 100.00%  11 / 11 packs repacked
+
+rebuilding index
+[0:01] 100.00%  609 / 609 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  2 / 2 files deleted
+
+removing 17 old packs
+[0:00] 100.00%  17 / 17 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot 733f86e0
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 4.573s: 134708 files, 17.183 GiB
+
+Files:          52 new,   189 changed, 134467 unmodified
+Dirs:           11 new,   220 changed, 19906 unmodified
+Data Blobs:    302 new
+Tree Blobs:    164 new
+Added to the repository: 265.318 MiB (108.757 MiB stored)
+
+processed 134708 files, 17.183 GiB in 0:16
+snapshot f5286a80 saved
+using temporary cache in /tmp/restic-check-cache-3838907331
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:03] 100.00%  10 / 10 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 9 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  weekly snapshot   /
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  weekly snapshot   /
+ba046e64  2025-02-22 02:00:02  vps-79b520bc  vps-backup-2025-02-22  daily snapshot    /
+f569f6de  2025-02-23 02:00:01  vps-79b520bc  vps-backup-2025-02-23  daily snapshot    /
+                                                                    weekly snapshot
+1f64b8f8  2025-02-24 02:00:01  vps-79b520bc  vps-backup-2025-02-24  daily snapshot    /
+0647bb3a  2025-02-25 02:00:01  vps-79b520bc  vps-backup-2025-02-25  daily snapshot    /
+d19181d6  2025-02-26 02:00:01  vps-79b520bc  vps-backup-2025-02-26  daily snapshot    /
+733f86e0  2025-02-27 02:00:01  vps-79b520bc  vps-backup-2025-02-27  daily snapshot    /
+f5286a80  2025-02-28 02:00:01  vps-79b520bc  vps-backup-2025-02-28  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+9 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+73141404  2025-02-21 02:00:01  vps-79b520bc  vps-backup-2025-02-21  /
+-------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 9 snapshots
+[0:02] 100.00%  9 / 9 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  617 / 617 packs processed
+
+
+to repack:          6263 blobs / 56.296 MiB
+this removes:        463 blobs / 49.345 MiB
+to delete:          2051 blobs / 2.684 GiB
+total prune:        2514 blobs / 2.732 GiB
+remaining:        133740 blobs / 7.122 GiB
+unused size after prune: 359.598 MiB (4.93% of remaining size)
+
+repacking packs
+[0:02] 100.00%  5 / 5 packs repacked
+
+rebuilding index
+[0:01] 100.00%  452 / 452 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  2 / 2 files deleted
+
+removing 167 old packs
+[0:01] 100.00%  167 / 167 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot f5286a80
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 9.667s: 134796 files, 17.167 GiB
+
+Files:         150 new,   239 changed, 134407 unmodified
+Dirs:           29 new,   258 changed, 19864 unmodified
+Data Blobs:    444 new
+Tree Blobs:    271 new
+Added to the repository: 313.749 MiB (140.423 MiB stored)
+
+processed 134796 files, 17.167 GiB in 0:23
+snapshot 84dd7ff9 saved
+using temporary cache in /tmp/restic-check-cache-3898364995
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:05] 100.00%  10 / 10 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 9 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  weekly snapshot   /
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  weekly snapshot   /
+f569f6de  2025-02-23 02:00:01  vps-79b520bc  vps-backup-2025-02-23  daily snapshot    /
+                                                                    weekly snapshot
+1f64b8f8  2025-02-24 02:00:01  vps-79b520bc  vps-backup-2025-02-24  daily snapshot    /
+0647bb3a  2025-02-25 02:00:01  vps-79b520bc  vps-backup-2025-02-25  daily snapshot    /
+d19181d6  2025-02-26 02:00:01  vps-79b520bc  vps-backup-2025-02-26  daily snapshot    /
+733f86e0  2025-02-27 02:00:01  vps-79b520bc  vps-backup-2025-02-27  daily snapshot    /
+f5286a80  2025-02-28 02:00:01  vps-79b520bc  vps-backup-2025-02-28  daily snapshot    /
+                                                                    monthly snapshot
+84dd7ff9  2025-03-01 02:00:01  vps-79b520bc  vps-backup-2025-03-01  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+9 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+ba046e64  2025-02-22 02:00:02  vps-79b520bc  vps-backup-2025-02-22  /
+-------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 9 snapshots
+[0:02] 100.00%  9 / 9 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  462 / 462 packs processed
+
+
+to repack:          6189 blobs / 41.006 MiB
+this removes:        223 blobs / 34.005 MiB
+to delete:            59 blobs / 32.833 MiB
+total prune:         282 blobs / 66.838 MiB
+remaining:        134173 blobs / 7.194 GiB
+unused size after prune: 363.492 MiB (4.93% of remaining size)
+
+repacking packs
+[0:02] 100.00%  3 / 3 packs repacked
+
+rebuilding index
+[0:01] 100.00%  459 / 459 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  2 / 2 files deleted
+
+removing 5 old packs
+[0:00] 100.00%  5 / 5 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot 84dd7ff9
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 5.894s: 134812 files, 17.134 GiB
+
+Files:          56 new,   170 changed, 134586 unmodified
+Dirs:           12 new,   107 changed, 20031 unmodified
+Data Blobs:    362 new
+Tree Blobs:    108 new
+Added to the repository: 329.733 MiB (142.023 MiB stored)
+
+processed 134812 files, 17.134 GiB in 0:18
+snapshot 34d28050 saved
+using temporary cache in /tmp/restic-check-cache-2639294034
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:03] 100.00%  10 / 10 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 10 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  weekly snapshot   /
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  weekly snapshot   /
+f569f6de  2025-02-23 02:00:01  vps-79b520bc  vps-backup-2025-02-23  weekly snapshot   /
+1f64b8f8  2025-02-24 02:00:01  vps-79b520bc  vps-backup-2025-02-24  daily snapshot    /
+0647bb3a  2025-02-25 02:00:01  vps-79b520bc  vps-backup-2025-02-25  daily snapshot    /
+d19181d6  2025-02-26 02:00:01  vps-79b520bc  vps-backup-2025-02-26  daily snapshot    /
+733f86e0  2025-02-27 02:00:01  vps-79b520bc  vps-backup-2025-02-27  daily snapshot    /
+f5286a80  2025-02-28 02:00:01  vps-79b520bc  vps-backup-2025-02-28  daily snapshot    /
+                                                                    monthly snapshot
+84dd7ff9  2025-03-01 02:00:01  vps-79b520bc  vps-backup-2025-03-01  daily snapshot    /
+34d28050  2025-03-02 02:00:01  vps-79b520bc  vps-backup-2025-03-02  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+10 snapshots
+
+open repository
+lock repository
+using parent snapshot 34d28050
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 6.898s: 134801 files, 17.159 GiB
+
+Files:          76 new,   216 changed, 134509 unmodified
+Dirs:           18 new,   184 changed, 19956 unmodified
+Data Blobs:    360 new
+Tree Blobs:    177 new
+Added to the repository: 256.507 MiB (105.758 MiB stored)
+
+processed 134801 files, 17.159 GiB in 0:16
+snapshot 61e57270 saved
+using temporary cache in /tmp/restic-check-cache-3635421815
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:03] 100.00%  11 / 11 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 9 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  weekly snapshot   /
+f569f6de  2025-02-23 02:00:01  vps-79b520bc  vps-backup-2025-02-23  weekly snapshot   /
+0647bb3a  2025-02-25 02:00:01  vps-79b520bc  vps-backup-2025-02-25  daily snapshot    /
+d19181d6  2025-02-26 02:00:01  vps-79b520bc  vps-backup-2025-02-26  daily snapshot    /
+733f86e0  2025-02-27 02:00:01  vps-79b520bc  vps-backup-2025-02-27  daily snapshot    /
+f5286a80  2025-02-28 02:00:01  vps-79b520bc  vps-backup-2025-02-28  daily snapshot    /
+                                                                    monthly snapshot
+84dd7ff9  2025-03-01 02:00:01  vps-79b520bc  vps-backup-2025-03-01  daily snapshot    /
+34d28050  2025-03-02 02:00:01  vps-79b520bc  vps-backup-2025-03-02  daily snapshot    /
+                                                                    weekly snapshot
+61e57270  2025-03-03 02:00:01  vps-79b520bc  vps-backup-2025-03-03  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+9 snapshots
+
+remove 2 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+606e1672  2025-02-09 16:02:11  vps-79b520bc  vps-backup-2025-02-09  /
+1f64b8f8  2025-02-24 02:00:01  vps-79b520bc  vps-backup-2025-02-24  /
+-------------------------------------------------------------------------
+2 snapshots
+
+[0:00] 100.00%  2 / 2 files deleted
+
+2 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 9 snapshots
+[0:02] 100.00%  9 / 9 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  477 / 477 packs processed
+
+
+to repack:         23704 blobs / 92.805 MiB
+this removes:       3584 blobs / 72.830 MiB
+to delete:            19 blobs / 16.002 MiB
+total prune:        3603 blobs / 88.832 MiB
+remaining:        131577 blobs / 7.350 GiB
+unused size after prune: 363.114 MiB (4.82% of remaining size)
+
+repacking packs
+[0:04] 100.00%  9 / 9 packs repacked
+
+rebuilding index
+[0:01] 100.00%  469 / 469 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  3 / 3 files deleted
+
+removing 10 old packs
+[0:00] 100.00%  10 / 10 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot 61e57270
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 7.110s: 134977 files, 17.143 GiB
+
+Files:         211 new,   225 changed, 134541 unmodified
+Dirs:           27 new,   279 changed, 19865 unmodified
+Data Blobs:    397 new
+Tree Blobs:    299 new
+Added to the repository: 302.684 MiB (123.151 MiB stored)
+
+processed 134977 files, 17.143 GiB in 0:18
+snapshot 00341b6c saved
+using temporary cache in /tmp/restic-check-cache-4171816
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:03] 100.00%  10 / 10 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 9 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  weekly snapshot   /
+f569f6de  2025-02-23 02:00:01  vps-79b520bc  vps-backup-2025-02-23  weekly snapshot   /
+d19181d6  2025-02-26 02:00:01  vps-79b520bc  vps-backup-2025-02-26  daily snapshot    /
+733f86e0  2025-02-27 02:00:01  vps-79b520bc  vps-backup-2025-02-27  daily snapshot    /
+f5286a80  2025-02-28 02:00:01  vps-79b520bc  vps-backup-2025-02-28  daily snapshot    /
+                                                                    monthly snapshot
+84dd7ff9  2025-03-01 02:00:01  vps-79b520bc  vps-backup-2025-03-01  daily snapshot    /
+34d28050  2025-03-02 02:00:01  vps-79b520bc  vps-backup-2025-03-02  daily snapshot    /
+                                                                    weekly snapshot
+61e57270  2025-03-03 02:00:01  vps-79b520bc  vps-backup-2025-03-03  daily snapshot    /
+00341b6c  2025-03-04 02:00:01  vps-79b520bc  vps-backup-2025-03-04  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+9 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+0647bb3a  2025-02-25 02:00:01  vps-79b520bc  vps-backup-2025-02-25  /
+-------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 9 snapshots
+[0:02] 100.00%  9 / 9 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  478 / 478 packs processed
+
+
+to repack:          1852 blobs / 29.957 MiB
+this removes:        803 blobs / 26.890 MiB
+to delete:            52 blobs / 33.859 MiB
+total prune:         855 blobs / 60.749 MiB
+remaining:        131418 blobs / 7.410 GiB
+unused size after prune: 371.350 MiB (4.89% of remaining size)
+
+repacking packs
+[0:03] 100.00%  3 / 3 packs repacked
+
+rebuilding index
+[0:02] 100.00%  475 / 475 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  2 / 2 files deleted
+
+removing 5 old packs
+[0:00] 100.00%  5 / 5 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot 00341b6c
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 4.455s: 134895 files, 17.137 GiB
+
+Files:          34 new,   157 changed, 134704 unmodified
+Dirs:           11 new,   160 changed, 19998 unmodified
+Data Blobs:    316 new
+Tree Blobs:     94 new
+Added to the repository: 313.151 MiB (139.540 MiB stored)
+
+processed 134895 files, 17.137 GiB in 0:18
+snapshot ad961882 saved
+using temporary cache in /tmp/restic-check-cache-1313662861
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:03] 100.00%  10 / 10 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 9 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  weekly snapshot   /
+f569f6de  2025-02-23 02:00:01  vps-79b520bc  vps-backup-2025-02-23  weekly snapshot   /
+733f86e0  2025-02-27 02:00:01  vps-79b520bc  vps-backup-2025-02-27  daily snapshot    /
+f5286a80  2025-02-28 02:00:01  vps-79b520bc  vps-backup-2025-02-28  daily snapshot    /
+                                                                    monthly snapshot
+84dd7ff9  2025-03-01 02:00:01  vps-79b520bc  vps-backup-2025-03-01  daily snapshot    /
+34d28050  2025-03-02 02:00:01  vps-79b520bc  vps-backup-2025-03-02  daily snapshot    /
+                                                                    weekly snapshot
+61e57270  2025-03-03 02:00:01  vps-79b520bc  vps-backup-2025-03-03  daily snapshot    /
+00341b6c  2025-03-04 02:00:01  vps-79b520bc  vps-backup-2025-03-04  daily snapshot    /
+ad961882  2025-03-05 02:00:01  vps-79b520bc  vps-backup-2025-03-05  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+9 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+d19181d6  2025-02-26 02:00:01  vps-79b520bc  vps-backup-2025-02-26  /
+-------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 9 snapshots
+[0:03] 100.00%  9 / 9 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  485 / 485 packs processed
+
+
+to repack:         21579 blobs / 46.410 MiB
+this removes:        781 blobs / 27.676 MiB
+to delete:            71 blobs / 48.949 MiB
+total prune:         852 blobs / 76.624 MiB
+remaining:        130976 blobs / 7.472 GiB
+unused size after prune: 376.543 MiB (4.92% of remaining size)
+
+repacking packs
+[0:04] 100.00%  4 / 4 packs repacked
+
+rebuilding index
+[0:03] 100.00%  480 / 480 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  2 / 2 files deleted
+
+removing 7 old packs
+[0:00] 100.00%  7 / 7 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot ad961882
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 5.422s: 134907 files, 17.063 GiB
+
+Files:          42 new,   179 changed, 134686 unmodified
+Dirs:           11 new,    92 changed, 20068 unmodified
+Data Blobs:    335 new
+Tree Blobs:     97 new
+Added to the repository: 295.979 MiB (116.053 MiB stored)
+
+processed 134907 files, 17.063 GiB in 0:19
+snapshot f85bf145 saved
+using temporary cache in /tmp/restic-check-cache-2190139853
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:02] 100.00%  10 / 10 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 9 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  weekly snapshot   /
+f569f6de  2025-02-23 02:00:01  vps-79b520bc  vps-backup-2025-02-23  weekly snapshot   /
+f5286a80  2025-02-28 02:00:01  vps-79b520bc  vps-backup-2025-02-28  daily snapshot    /
+                                                                    monthly snapshot
+84dd7ff9  2025-03-01 02:00:01  vps-79b520bc  vps-backup-2025-03-01  daily snapshot    /
+34d28050  2025-03-02 02:00:01  vps-79b520bc  vps-backup-2025-03-02  daily snapshot    /
+                                                                    weekly snapshot
+61e57270  2025-03-03 02:00:01  vps-79b520bc  vps-backup-2025-03-03  daily snapshot    /
+00341b6c  2025-03-04 02:00:01  vps-79b520bc  vps-backup-2025-03-04  daily snapshot    /
+ad961882  2025-03-05 02:00:01  vps-79b520bc  vps-backup-2025-03-05  daily snapshot    /
+f85bf145  2025-03-06 02:00:01  vps-79b520bc  vps-backup-2025-03-06  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+9 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host          Tags                   Paths
+-------------------------------------------------------------------------
+733f86e0  2025-02-27 02:00:01  vps-79b520bc  vps-backup-2025-02-27  /
+-------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 9 snapshots
+[0:02] 100.00%  9 / 9 snapshots
+
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  488 / 488 packs processed
+
+
+to repack:         23172 blobs / 64.534 MiB
+this removes:        444 blobs / 40.550 MiB
+to delete:            28 blobs / 16.972 MiB
+total prune:         472 blobs / 57.522 MiB
+remaining:        130936 blobs / 7.529 GiB
+unused size after prune: 373.315 MiB (4.84% of remaining size)
+
+repacking packs
+[0:04] 100.00%  5 / 5 packs repacked
+
+rebuilding index
+[0:01] 100.00%  484 / 484 packs processed
+
+deleting obsolete index files
+[0:00] 100.00%  2 / 2 files deleted
+
+removing 6 old packs
+[0:00] 100.00%  6 / 6 files deleted
+
+done
+open repository
+lock repository
+using parent snapshot f85bf145
+load index files
+start scan on [/]
+start backup on [/]
+scan finished in 4.509s: 134899 files, 16.874 GiB
+
+Files:          47 new,   192 changed, 134660 unmodified
+Dirs:           13 new,   145 changed, 20013 unmodified
+Data Blobs:    311 new
+Tree Blobs:    152 new
+Added to the repository: 283.306 MiB (117.606 MiB stored)
+
+processed 134899 files, 16.878 GiB in 0:17
+snapshot 56fdfa0a saved
+using temporary cache in /tmp/restic-check-cache-1255372249
+create exclusive lock for repository
+load indexes
+check all packs
+check snapshots, trees and blobs
+[0:03] 100.00%  10 / 10 snapshots
+
+no errors were found
+Applying Policy: keep 7 daily, 4 weekly, 6 monthly snapshots
+keep 10 snapshots:
+ID        Time                 Host          Tags                   Reasons           Paths
+-------------------------------------------------------------------------------------------
+b5a6360a  2025-02-16 02:00:01  vps-79b520bc  vps-backup-2025-02-16  weekly snapshot   /
+f569f6de  2025-02-23 02:00:01  vps-79b520bc  vps-backup-2025-02-23  weekly snapshot   /
+f5286a80  2025-02-28 02:00:01  vps-79b520bc  vps-backup-2025-02-28  monthly snapshot  /
+84dd7ff9  2025-03-01 02:00:01  vps-79b520bc  vps-backup-2025-03-01  daily snapshot    /
+34d28050  2025-03-02 02:00:01  vps-79b520bc  vps-backup-2025-03-02  daily snapshot    /
+                                                                    weekly snapshot
+61e57270  2025-03-03 02:00:01  vps-79b520bc  vps-backup-2025-03-03  daily snapshot    /
+00341b6c  2025-03-04 02:00:01  vps-79b520bc  vps-backup-2025-03-04  daily snapshot    /
+ad961882  2025-03-05 02:00:01  vps-79b520bc  vps-backup-2025-03-05  daily snapshot    /
+f85bf145  2025-03-06 02:00:01  vps-79b520bc  vps-backup-2025-03-06  daily snapshot    /
+56fdfa0a  2025-03-07 02:00:01  vps-79b520bc  vps-backup-2025-03-07  daily snapshot    /
+                                                                    weekly snapshot
+                                                                    monthly snapshot
+-------------------------------------------------------------------------------------------
+10 snapshots
+

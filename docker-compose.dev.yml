@@ -1,0 +1,69 @@
+version: '3.8'
+
+services:
+  backend_dev:
+    image: registry.the-tip-top.site:5002/the-tip-top-back:latest-dev-back
+    container_name: backend-dev
+    restart: always
+    depends_on:
+      - postgres_dev
+      - vault
+    environment:
+      APP_ENVIRONMENT: dev
+      VAULT_ADDR: "http://51.77.244.16:8200"
+      VAULT_TOKEN: ${VAULT_TOKEN}
+    volumes:
+      - ./entrypoint.sh:/entrypoint.sh  # Monte le script dans le conteneur
+    entrypoint: ["/bin/sh", "-c", "
+      chmod +x /entrypoint.sh;
+      /entrypoint.sh
+    "]
+    networks:
+      - web
+    labels:
+      - traefik.enable=true
+      - "traefik.http.routers.backend-dev.entrypoints=websecure"
+      - "traefik.http.routers.backend-dev.rule=Host(`dev-back.the-tip-top.site`)"
+      - "traefik.http.services.backend-dev.loadbalancer.server.port=8087"  # 🔥 Corrigé de 8087 à 8080
+      - "traefik.http.routers.backend-dev.tls.certresolver=lets-encr"
+      - "traefik.http.middlewares.forwardheader.headers.customrequestheaders.X-Forwarded-Proto=https"
+    ports:
+      - "8087" # Expose le port interne de Tomcat pour le mapping
+
+  frontend_dev:
+    image: registry.the-tip-top.site:5000/the-tip-top-front:Front-Dev-latest
+    container_name: frontend-dev
+    restart: always
+    networks:
+      - private
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend-dev.rule=Host(`dev.the-tip-top.site`)"
+      - "traefik.http.routers.frontend-dev.entrypoints=websecure"
+      - "traefik.http.routers.frontend-dev.tls.certresolver=lets-encr"
+
+  postgres_dev:
+    image: postgres:14
+    container_name: postgres-dev
+    restart: always
+    ports:
+    - "5432:5432"
+    networks:
+      - web
+      - private
+    environment:
+      POSTGRES_USER: admin_dev
+      POSTGRES_PASSWORD: dev_password
+      POSTGRES_DB: dev_the_tip_top_db
+    volumes:
+      - postgres_dev_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_dev_data:
+
+networks:
+  web:
+    external: true
+  private:
+    driver: bridge

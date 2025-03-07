@@ -1,0 +1,13 @@
+# Données sensibles ou temporaires des containers Docker
+data/
+logs/
+node_modules/
+dist/
+build/
+tmp/
+*.log
+*.tmp
+*.bak
+*.pem
+*.key
+*.env

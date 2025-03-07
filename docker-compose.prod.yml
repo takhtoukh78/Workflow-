@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  backend_prod:
+    image: registry.the-tip-top.site:5002/the-tip-top-back:latest-prod-back
+    container_name: backend-prod
+    restart: always
+    depends_on:
+      - postgres_prod
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-prod:5432/prod_the_tip_top_db
+      SPRING_DATASOURCE_USERNAME: admin_prod
+      SPRING_DATASOURCE_PASSWORD: prod_password
+    networks:
+      - private
+      - web
+    labels:
+      - traefik.enable=true
+      - "traefik.http.routers.backend-prod.entrypoints=websecure"
+      - "traefik.http.routers.backend-prod.rule=Host(`prod-back.the-tip-top.site`)"
+      - "traefik.http.routers.backend-prod.tls.certresolver=lets-encr"
+      - "traefik.http.middlewares.forwardheader.headers.customrequestheaders.X-Forwarded-Proto=https"
+    ports:
+      - "8077:8080" # Expose le port interne de Tomcat pour le mapping
+
+  frontend_prod:
+    image: registry.the-tip-top.site:5000/the-tip-top-front:Front-Prod-latest
+    container_name: frontend-prod
+    restart: always
+    networks:
+      - private
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend-prod.rule=Host(`prod.the-tip-top.site`)"
+      - "traefik.http.routers.frontend-prod.entrypoints=websecure"
+      - "traefik.http.routers.frontend-prod.tls.certresolver=lets-encr"
+
+  postgres_prod:
+    image: postgres:14
+    container_name: postgres-prod
+    restart: always
+    networks:
+      - private
+    environment:
+      POSTGRES_USER: admin_prod
+      POSTGRES_PASSWORD: prod_password
+      POSTGRES_DB: prod_the_tip_top_db
+    volumes:
+      - postgres_prod_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_prod_data:
+

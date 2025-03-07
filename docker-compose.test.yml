@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  backend_test:
+    image: registry.the-tip-top.site:5002/the-tip-top-back:latest-test-back
+    container_name: backend-test
+    restart: always
+    depends_on:
+      - postgres_test
+    environment:
+      SPRING_PROFILES_ACTIVE: test
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-test:5433/test_the_tip_top_db
+      SPRING_DATASOURCE_USERNAME: admin_test
+      SPRING_DATASOURCE_PASSWORD: test_password
+    networks:
+      - private
+      - web
+    labels:
+      - traefik.enable=true
+      - "traefik.http.routers.backend-test.entrypoints=websecure"
+      - "traefik.http.routers.backend-test.rule=Host(`test-back.the-tip-top.site`)"
+      - "traefik.http.routers.backend-test.tls.certresolver=lets-encr"
+      - "traefik.http.middlewares.forwardheader.headers.customrequestheaders.X-Forwarded-Proto=https"
+    ports:
+      - "8097:8080" # Expose le port interne de Tomcat pour le mapping
+
+  frontend_test:
+    image: registry.the-tip-top.site:5000/the-tip-top-front:Front-Test-latest
+    container_name: frontend-test
+    restart: always
+    networks:
+      - private
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend-test.rule=Host(`dev.the-tip-top.site`)"
+      - "traefik.http.routers.frontend-test.entrypoints=websecure"
+      - "traefik.http.routers.frontend-test.tls.certresolver=lets-encr"
+
+
+  postgres_test:
+    image: postgres:14
+    container_name: postgres-test
+    restart: always
+    networks:
+      - private
+    environment:
+      POSTGRES_USER: admin_test
+      POSTGRES_PASSWORD: test_password
+      POSTGRES_DB: test_the_tip_top_db
+    volumes:
+      - postgres_test_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_test_data:
+
