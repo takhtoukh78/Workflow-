@@ -11,3 +11,7 @@ logs/
 *.token
 .vault-token
 acme.json
+.sudo_as_admin_successful
+.selected_editor
+.profile
+transferring
