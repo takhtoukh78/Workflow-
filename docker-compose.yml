@@ -352,45 +352,6 @@ services:
       - postgresql:/var/lib/postgresql
       - postgresql_data:/var/lib/postgresql/data
 
-  # PostgreSQL - Prod
-  postgres_prod:
-    image: postgres:14
-    container_name: postgres-prod
-    environment:
-      POSTGRES_USER: admin_prod
-      POSTGRES_PASSWORD: prod_password
-      POSTGRES_DB: prod_db
-    networks:
-      - private
-      - web
-    labels:
-      - traefik.enable=true
-      - "traefik.http.routers.postgres-prod.entrypoints=websecure"
-      - "traefik.http.routers.postgres-prod.rule=Host(`postgres-prod.the-tip-top.site`)"
-      - "traefik.http.routers.postgres-prod.tls.certresolver=lets-encr"
-
-  # Backend Spring Boot - Prod
-  backend_prod:
-    image: openjdk:21-jdk-slim
-    container_name: backend-prod
-    volumes:
-      - ./backend/target/backend-prod.jar:/app/backend.jar
-    working_dir: /app
-    command: ["java", "-jar", "backend.jar"]
-    environment:
-      SPRING_PROFILES_ACTIVE: prod
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres_prod:5432/prod_db
-      SPRING_DATASOURCE_USERNAME: admin_prod
-      SPRING_DATASOURCE_PASSWORD: prod_password
-    networks:
-      - private
-      - web
-    labels:
-      - traefik.enable=true
-      - "traefik.http.routers.backend-prod.entrypoints=websecure"
-      - "traefik.http.routers.backend-prod.rule=Host(`api.prod.the-tip-top.site`)"
-      - "traefik.http.routers.backend-prod.tls.certresolver=lets-encr"
-
 volumes:
   sonarqube_data:
   sonarqube_extensions:
