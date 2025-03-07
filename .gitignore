@@ -1,19 +1,13 @@
-# Exclusion totale des fichiers système ou Docker
-data/
 swapfile
+.ssh/
+.bash_history
+data/
+logs/
 *.log
 *.tmp
-*.bak
 *.pem
 *.key
 *.env
 *.token
-node_modules/
-dist/
-build/
-tmp/
-logs/
+.vault-token
 acme.json
-*.swp
-*.swo
-
