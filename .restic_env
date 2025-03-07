@@ -3,9 +3,6 @@ export AWS_ACCESS_KEY_ID=fe9d9e7c61c646bab9b61f8ae658fdd6
 export AWS_SECRET_ACCESS_KEY=67cde49fff004194a2c08eff0227d880
 
 # Configuration de l'endpoint OVH
-export RESTIC_REPOSITORY=s3:export RESTIC_REPOSITORY=s3:https://s3.gra.io.cloud.ovh.net/vps-backup-2025
+export RESTIC_REPOSITORY=s3:https://s3.gra.io.cloud.ovh.net/vps-backup-2025
 export AWS_DEFAULT_REGION=gra
 export AWS_S3_SIGNATURE_VERSION=v4
-
-# Mot de passe de chiffrement des sauvegardes Restic
-export RESTIC_PASSWORD=ton_mot_de_passe_de_chiffrement
