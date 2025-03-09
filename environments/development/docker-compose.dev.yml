@@ -37,6 +37,8 @@ services:
     networks:
       - private
       - web
+    environment:
+      NODE_ENV: development
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.frontend-dev.rule=Host(`dev.the-tip-top.site`)"
