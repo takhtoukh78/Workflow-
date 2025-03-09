@@ -7,25 +7,31 @@ services:
     restart: always
     depends_on:
       - postgres_test
+      - vault
     environment:
-      SPRING_PROFILES_ACTIVE: test
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-test:5433/test_the_tip_top_db
-      SPRING_DATASOURCE_USERNAME: admin_test
-      SPRING_DATASOURCE_PASSWORD: test_password
+      APP_ENVIRONMENT: test
+      VAULT_ADDR: "http://51.77.244.16:8200"
+      VAULT_TOKEN: ${VAULT_TOKEN}
+    volumes:
+      - ~/environments/test/entrypoint.sh:/entrypoint.sh  # Monte le script au bon endroit
+    entrypoint: ["/bin/sh", "-c", "
+      chmod +x /entrypoint.sh &&
+      exec /entrypoint.sh
+    "]
     networks:
-      - private
       - web
     labels:
       - traefik.enable=true
       - "traefik.http.routers.backend-test.entrypoints=websecure"
       - "traefik.http.routers.backend-test.rule=Host(`test-back.the-tip-top.site`)"
+      - "traefik.http.services.backend-test.loadbalancer.server.port=8088"  # Corrigé de 8087 à 8080
       - "traefik.http.routers.backend-test.tls.certresolver=lets-encr"
       - "traefik.http.middlewares.forwardheader.headers.customrequestheaders.X-Forwarded-Proto=https"
     ports:
-      - "8097:8080" # Expose le port interne de Tomcat pour le mapping
+      - "8088" # Expose le port interne de Tomcat pour le mapping
 
   frontend_test:
-    image: registry.the-tip-top.site:5000/the-tip-top-front:Front-Test-latest
+    image: registry.the-tip-top.site:5000/the-tip-top-front:Front-Dev-latest
     container_name: frontend-test
     restart: always
     networks:
@@ -33,16 +39,18 @@ services:
       - web
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.frontend-test.rule=Host(`dev.the-tip-top.site`)"
+      - "traefik.http.routers.frontend-test.rule=Host(`test.the-tip-top.site`)"
       - "traefik.http.routers.frontend-test.entrypoints=websecure"
       - "traefik.http.routers.frontend-test.tls.certresolver=lets-encr"
-
 
   postgres_test:
     image: postgres:14
     container_name: postgres-test
     restart: always
+    ports:
+    - "5434:5432"
     networks:
+      - web
       - private
     environment:
       POSTGRES_USER: admin_test
@@ -54,3 +62,8 @@ services:
 volumes:
   postgres_test_data:
 
+networks:
+  web:
+    external: true
+  private:
+    driver: bridge
