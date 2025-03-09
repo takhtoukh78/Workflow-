@@ -13,10 +13,10 @@ services:
       VAULT_ADDR: "http://51.77.244.16:8200"
       VAULT_TOKEN: ${VAULT_TOKEN}
     volumes:
-      - ./entrypoint.sh:/entrypoint.sh  # Monte le script dans le conteneur
+      - ~/environments/development/entrypoint.sh:/entrypoint.sh  # Monte le script au bon endroit
     entrypoint: ["/bin/sh", "-c", "
-      chmod +x /entrypoint.sh;
-      /entrypoint.sh
+      chmod +x /entrypoint.sh &&
+      exec /entrypoint.sh
     "]
     networks:
       - web

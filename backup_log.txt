@@ -1729,3 +1729,9 @@ f85bf145  2025-03-06 02:00:01  vps-79b520bc  vps-backup-2025-03-06  daily snapsh
 -------------------------------------------------------------------------------------------
 10 snapshots
 
+open repository
+reading repository password from stdin
+Fatal: an empty password is not a password
+open repository
+reading repository password from stdin
+Fatal: an empty password is not a password
