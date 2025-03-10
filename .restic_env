@@ -6,3 +6,4 @@ export AWS_SECRET_ACCESS_KEY=67cde49fff004194a2c08eff0227d880
 export RESTIC_REPOSITORY=s3:https://s3.gra.io.cloud.ovh.net/vps-backup-2025
 export AWS_DEFAULT_REGION=gra
 export AWS_S3_SIGNATURE_VERSION=v4
+export RESTIC_PASSWORD="YdKxQ3_E6a!9cN?f4xQ2#s8FRjAT9h"
