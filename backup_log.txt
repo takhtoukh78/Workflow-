@@ -1735,3 +1735,6 @@ Fatal: an empty password is not a password
 open repository
 reading repository password from stdin
 Fatal: an empty password is not a password
+open repository
+reading repository password from stdin
+Fatal: an empty password is not a password

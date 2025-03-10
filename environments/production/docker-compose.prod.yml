@@ -7,33 +7,41 @@ services:
     restart: always
     depends_on:
       - postgres_prod
+      - vault
     environment:
-      SPRING_PROFILES_ACTIVE: prod
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-prod:5432/prod_the_tip_top_db
-      SPRING_DATASOURCE_USERNAME: admin_prod
-      SPRING_DATASOURCE_PASSWORD: prod_password
+      APP_ENVIRONMENT: prod
+      VAULT_ADDR: "http://51.77.244.16:8200"
+      VAULT_TOKEN: ${VAULT_TOKEN}
+    volumes:
+      - ~/environments/production/entrypoint.sh:/entrypoint.sh  # Monte le script au bon endroit
+    entrypoint: ["/bin/sh", "-c", "
+      chmod +x /entrypoint.sh &&
+      exec /entrypoint.sh
+    "]
     networks:
-      - private
       - web
     labels:
       - traefik.enable=true
       - "traefik.http.routers.backend-prod.entrypoints=websecure"
-      - "traefik.http.routers.backend-prod.rule=Host(`prod-back.the-tip-top.site`)"
+      - "traefik.http.routers.backend-prod.rule=Host(`api.the-tip-top.site`)"
+      - "traefik.http.services.backend-prod.loadbalancer.server.port=8087"  # Corrigé de 8087 à 8080
       - "traefik.http.routers.backend-prod.tls.certresolver=lets-encr"
       - "traefik.http.middlewares.forwardheader.headers.customrequestheaders.X-Forwarded-Proto=https"
     ports:
-      - "8077:8080" # Expose le port interne de Tomcat pour le mapping
+      - "8087" # Expose le port interne de Tomcat pour le mapping
 
   frontend_prod:
-    image: registry.the-tip-top.site:5000/the-tip-top-front:Front-Prod-latest
+    image: registry.the-tip-top.site:5000/the-tip-top-front:Front-prod-latest
     container_name: frontend-prod
     restart: always
     networks:
       - private
       - web
+    environment:
+      NODE_ENV: production
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.frontend-prod.rule=Host(`prod.the-tip-top.site`)"
+      - "traefik.http.routers.frontend-prod.rule=Host(`jeux-concours.the-tip-top.site`)"
       - "traefik.http.routers.frontend-prod.entrypoints=websecure"
       - "traefik.http.routers.frontend-prod.tls.certresolver=lets-encr"
 
@@ -41,7 +49,10 @@ services:
     image: postgres:14
     container_name: postgres-prod
     restart: always
+    ports:
+    - "5435:5432"
     networks:
+      - web
       - private
     environment:
       POSTGRES_USER: admin_prod
@@ -53,3 +64,8 @@ services:
 volumes:
   postgres_prod_data:
 
+networks:
+  web:
+    external: true
+  private:
+    driver: bridge
