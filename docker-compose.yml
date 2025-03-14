@@ -130,6 +130,7 @@ services:
       - traefik.http.routers.gogs.rule=Host(`gogs.the-tip-top.site`)
       - traefik.http.services.gogs.loadbalancer.server.port=3000
       - "traefik.http.routers.gogs.tls.certresolver=lets-encr"
+      - "traefik.docker.network=web"
 
 
 #---------------------
@@ -151,6 +152,7 @@ services:
     labels:
       - traefik.enable=true
       - "traefik.http.routers.jenkins.entrypoints=websecure"
+      - "traefik.docker.network=web"
       - traefik.http.routers.jenkins.rule=Host(`jenkins.the-tip-top.site`)
       - traefik.http.services.jenkins.loadbalancer.server.port=8080
       - "traefik.http.routers.jenkins.tls.certresolver=lets-encr"
@@ -188,6 +190,7 @@ services:
      - traefik.enable=true
      - "traefik.http.routers.nexus.entrypoints=websecure"
      - "traefik.http.routers.nexus.rule=Host(`nexus.the-tip-top.site`)"
+     - "traefik.docker.network=web"
      - "traefik.http.routers.nexus.tls.certresolver=lets-encr"
      - "traefik.http.services.nexus.loadbalancer.server.port=8081"
      # Docker Registry
@@ -222,6 +225,8 @@ services:
       - "traefik.http.routers.prometheus.entrypoints=websecure"
       - traefik.http.routers.prometheus.rule=Host(`prometheus.the-tip-top.site`)
       - "traefik.http.routers.prometheus.tls.certresolver=lets-encr"
+      - "traefik.docker.network=web"
+
   grafana:
     image: grafana/grafana
     container_name: grafana
@@ -241,6 +246,8 @@ services:
       - "traefik.http.routers.grafana.entrypoints=websecure"
       - traefik.http.routers.grafana.rule=Host(`grafana.the-tip-top.site`)
       - "traefik.http.routers.grafana.tls.certresolver=lets-encr"
+      - "traefik.docker.network=web"
+
 #---------------------
 # server monitoring with prometheus
 #---------------------      
@@ -309,11 +316,7 @@ services:
       - "traefik.http.routers.sonarqube.entrypoints=websecure"
       - traefik.http.routers.sonarqube.rule=Host(`sonarqube.the-tip-top.site`)
       - "traefik.http.routers.sonarqube.tls.certresolver=lets-encr"
-    deploy:
-      resources:
-        limits:
-          memory: 2g
-          cpus: "1"
+      - "traefik.docker.network=web"
 
 #---------------------
 # Alertmanager
