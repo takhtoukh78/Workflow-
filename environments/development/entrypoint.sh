@@ -37,6 +37,7 @@
 
 # Export des variables d'environnement pour Spring Boot
 export SPRING_APPLICATION_NAME=$(echo "$VAULT_RESPONSE" | jq -r '.["spring.application.name"] // "the-tip-top"')
+export APP_ENVIRONMENT=$(echo "$VAULT_RESPONSE" | jq -r '.["app.environment"] // "dev"')
 export SPRING_DATASOURCE_USERNAME=$(echo "$VAULT_RESPONSE" | jq -r '.["spring.datasource.username"] // "default-db-user"')
 export SPRING_DATASOURCE_URL=$(echo "$VAULT_RESPONSE" | jq -r '.["spring.datasource.url"] // "jdbc:postgresql://localhost:5432/default-db"')
 export SPRING_DATASOURCE_PASSWORD=$(echo "$VAULT_RESPONSE" | jq -r '.["spring.datasource.password"] // "default-db-password"')
